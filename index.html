@@ -13,6 +13,7 @@
 <body>
     <h1><img src="./img/logo.svg" alt="Logo Splitter"></h1>
     <main>
+        <!--FIRST CONTAINER: INPUT CONTAINER-->
         <div class="input-container">
             <div class="div-bill-input">
                 <h3>Bill</h3>
@@ -37,7 +38,18 @@
                 <span class="people-input"><img src="./img/icon-person.svg"><input type="text" name="people" placeholder="0" onchange="updateAndGetResult()"></span>
             </div>
         </div>
-        <div></div>
+        <!--SECOND CONTAINER: RESULTS CONTAINER-->
+        <div class="div-results-container">
+            <div class="tip-perPerson">
+                <h3>Tip Amount <br> / person</h3>
+                <div class="result-tipAmount">$0.00</div>
+            </div>
+            <div class="total-perPerson">
+                <h3>Total <br> / person</h3>
+                <div class="result-totalAmount">$0.00</div>
+            </div>
+                <button class="reset-button">RESET</button>
+        </div>
     </main>
 
     <script src="./main.js"></script>

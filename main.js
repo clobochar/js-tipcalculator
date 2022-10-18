@@ -25,7 +25,12 @@ function getResult() {
   const calculateTotalTip = object.bill * (object.tip / 100);
   const tipPerPerson = calculateTotalTip / object.people;
   const totalAmount = tipPerPerson + object.bill / object.people;
-  console.log(calculateTotalTip, tipPerPerson, totalAmount);
+
+  const tipAmount = document.querySelector(".result-tipAmount");
+  tipAmount.innerHTML = `<h3>$${tipPerPerson.toFixed(2)}</h3>`;
+
+  const resultTotalAmount = document.querySelector(".result-totalAmount");
+  resultTotalAmount.innerHTML = `<h3>$${totalAmount.toFixed(2)}</h3>`;
 }
 
 function updateObject(event) {

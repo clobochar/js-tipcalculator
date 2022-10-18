@@ -21,17 +21,26 @@ body {
 body h1{
     display: flex;
     justify-content: center;
-    margin-top: 160px;
+    padding-top: 160px;
 }
 
 main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     background-color: white;
     width: 70%;
     border-radius: 12px;
+}
+
+.input-container, .div-results-container {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.div-results-container {
+    background-color: var(--darkGreen);
 }
 
 .error {
