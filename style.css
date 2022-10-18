@@ -15,8 +15,21 @@
 }
 
 body {
+    background-color: var(--background);
+}
+
+body h1{
     display: flex;
     justify-content: center;
     margin-top: 160px;
-    background-color: var(--background);
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 70%;
+    border-radius: 12px;
 }
