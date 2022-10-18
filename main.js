@@ -22,18 +22,18 @@ function isZero() {
 }
 
 function getResult() {
-  const calculate = object.bill * (object.tip / 100);
-  console.log(calculate);
+  const calculateTotalTip = object.bill * (object.tip / 100);
+  const tipPerPerson = calculateTotalTip / object.people;
+  const totalAmount = tipPerPerson + object.bill / object.people;
+  console.log(calculateTotalTip, tipPerPerson, totalAmount);
 }
 
 function updateObject(event) {
   Object.assign(object, { [event.target.name]: event.target.value });
   isZero();
-  console.log(object);
 }
 
 function updateAndGetResult() {
   updateObject(event);
   getResult();
-  console.log("its working");
 }
