@@ -1,0 +1,22 @@
+:root {
+
+    --background: #C5E4E7;
+    --darkGreen: #00474B;
+    --grayBlue: #9EBBBD;
+    --input: #F3F9FA;
+    --green: #26C2AE;
+    --error: #E17457;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+    background-color: var(--background);
+}
