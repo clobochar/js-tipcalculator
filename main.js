@@ -21,8 +21,19 @@ function isZero() {
   }
 }
 
-const updateObject = (event) => {
+function getResult() {
+  const calculate = object.bill * (object.tip / 100);
+  console.log(calculate);
+}
+
+function updateObject(event) {
   Object.assign(object, { [event.target.name]: event.target.value });
   isZero();
   console.log(object);
-};
+}
+
+function updateAndGetResult() {
+  updateObject(event);
+  getResult();
+  console.log("its working");
+}
