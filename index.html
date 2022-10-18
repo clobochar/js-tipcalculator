@@ -14,27 +14,27 @@
     <h1><img src="./img/logo.svg" alt="Logo Splitter"></h1>
     <main>
         <div class="input-container">
-            <div class="bill-input">
+            <div class="div-bill-input">
                 <h3>Bill</h3>
-                <span><img src="./img/icon-dollar.svg"><input type="text" placeholder="0"></span>
+                <span class="bill-input"><img src="./img/icon-dollar.svg"><input type="text" name="bill" placeholder="0" onchange="updateObject(event)"></span>
             </div>
             <div class="tip-input">
                 <h3>Select Tip %</h3>
-                <input type="radio" id="5" value="5">
+                <input type="radio" id="5" name="tip" value="5" onchange="updateObject(event)">
                 <label for="5">5%</label><br>
-                <input type="radio" id="10" value="10">
+                <input type="radio" id="10" name="tip" value="10" onchange="updateObject(event)">
                 <label for="10">10%</label><br>
-                <input type="radio" id="15" value="15">
+                <input type="radio" id="15" name="tip" value="15" onchange="updateObject(event)">
                 <label for="15">15%</label><br>
-                <input type="radio" id="25" value="25">
+                <input type="radio" id="25" name="tip" value="25" onchange="updateObject(event)">
                 <label for="25">25%</label><br>
-                <input type="radio" id="50" value="50">
+                <input type="radio" id="50" name="tip" value="50" onchange="updateObject(event)">
                 <label for="50">50%</label><br>
-                <input type="text" placeholder="CUSTOM">
+                <input type="text" name="tip" placeholder="CUSTOM" onchange="updateObject(event)">
             </div>
-            <div class="people-input">
+            <div class="div-people-input">
                 <h3>Number of People</h3>
-                <span><img src="./img/icon-person.svg"><input type="text" placeholder="0"></span>
+                <span class="people-input"><img src="./img/icon-person.svg"><input type="text" name="people" placeholder="0" onchange="updateObject(event)"></span>
             </div>
         </div>
         <div></div>
